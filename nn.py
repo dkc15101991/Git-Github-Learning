@@ -1,0 +1,2 @@
+model=nnmodel()
+model.save()
