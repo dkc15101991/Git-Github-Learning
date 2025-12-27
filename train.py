@@ -3,6 +3,7 @@ import numpy as np
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 from sklearn.metrics import accuracy_score, classification_report
 
 # 2. Create dummy dataset
@@ -20,7 +21,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # 4. Initialize model
-model = LogisticRegression(max_iter=1000)
+model = DecisionTreeClassifier(max_iter=1000)
 
 # 5. Train model
 model.fit(X_train, y_train)
